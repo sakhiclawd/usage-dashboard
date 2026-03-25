@@ -6,141 +6,175 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sakhi Token Dashboard</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;700;900&display=swap');
+            body { font-family: 'Inter', sans-serif; }
+            .mono { font-family: 'JetBrains Mono', monospace; }
+        </style>
     </head>
-    <body class="bg-slate-50 text-slate-900 font-sans p-4 md:p-8">
-        <div class="max-w-5xl mx-auto">
-            <header class="flex justify-between items-center mb-8 border-b pb-4">
+    <body class="bg-[#f8fafc] text-slate-900 p-4 md:p-8">
+        <div class="max-w-6xl mx-auto">
+            <header class="flex justify-between items-end mb-10 border-b border-slate-200 pb-6">
                 <div>
-                    <h1 class="text-3xl font-bold text-slate-800">Sakhi Usage Dashboard 🌸</h1>
-                    <p class="text-slate-500 italic text-sm">Last update: 2026-03-26 06:39:51 IST</p>
+                    <h1 class="text-4xl font-black text-slate-900 tracking-tight flex items-center">
+                        Sakhi Usage Dashboard <span class="ml-3 text-2xl">🌸</span>
+                    </h1>
+                    <p class="text-slate-400 font-medium mt-1 uppercase tracking-widest text-[10px]">
+                        Last refresh: 2026-03-26 06:41:11 IST
+                    </p>
                 </div>
-                <div class="text-right flex flex-col items-end">
-                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold uppercase">Node: clawd (VPS)</span>
+                <div class="text-right">
+                    <span class="bg-slate-900 text-white px-3 py-1 rounded text-[10px] font-bold uppercase tracking-tighter">Node: clawd</span>
                 </div>
             </header>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-                    <h3 class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Tokens Today</h3>
-                    <p class="text-5xl font-black text-slate-800 tracking-tight">0</p>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <h3 class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-3">Tokens (Today)</h3>
+                    <p class="text-5xl font-black text-slate-900 tracking-tighter mono">0</p>
                     <div class="mt-4 flex flex-wrap gap-1">
     
                     </div>
                 </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-                    <h3 class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Efficiency</h3>
-                    <p class="text-5xl font-black text-blue-600 tracking-tight">Tier 1</p>
-                    <p class="text-xs text-slate-400 mt-2">Local fallback & caching active</p>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <h3 class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-3">Efficiency</h3>
+                    <p class="text-5xl font-black text-blue-600 tracking-tighter">TIER 1</p>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase mt-3">Local CPU summarize + Gemini Flash</p>
                 </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-                    <h3 class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Workforce</h3>
-                    <p class="text-5xl font-black text-green-600 tracking-tight">Ready</p>
-                    <p class="text-xs text-slate-400 mt-2">Main, Krit, Twitter, & Claude online</p>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <h3 class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-3">Workforce</h3>
+                    <p class="text-5xl font-black text-emerald-500 tracking-tighter">READY</p>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase mt-3 italic">Main, Krit, Twitter, & Claude active</p>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">
-                <div class="lg:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-                    <h2 class="text-xl font-bold mb-6 flex items-center">
-                        <span class="mr-2">📅</span> Daily Breakdown
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-10">
+                <div class="lg:col-span-2 bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <h2 class="text-lg font-black mb-8 uppercase tracking-tight flex items-center">
+                        <span class="w-2 h-6 bg-slate-900 mr-3 rounded-full"></span> Daily Breakdown
                     </h2>
-                    <div class="space-y-4">
+                    <div class="space-y-3">
     
-                        <div class="flex items-center justify-between p-3 rounded-xl border border-transparent bg-slate-50 border-blue-100">
+                        <div class="flex items-center justify-between p-4 rounded-2xl border border-slate-50 bg-slate-50 ring-1 ring-inset ring-slate-200">
                             <div>
-                                <span class="text-sm font-bold text-slate-700">2026-03-26</span>
-                                <div class="flex gap-2 mt-1">
+                                <span class="text-xs font-black text-slate-900 mono">2026-03-26</span>
+                                <div class="flex gap-3 mt-1.5">
         
                                 </div>
                             </div>
-                            <span class="text-lg font-mono font-bold text-slate-800">0</span>
+                            <span class="text-xl font-black text-slate-900 mono">0</span>
                         </div>
         
                     </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-                    <h2 class="text-xl font-bold mb-6 flex items-center">
-                        <span class="mr-2">🧠</span> Context Weight
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <h2 class="text-lg font-black mb-8 uppercase tracking-tight flex items-center">
+                        <span class="w-2 h-6 bg-blue-500 mr-3 rounded-full"></span> Context weight
                     </h2>
-                    <h3 class="text-[10px] font-bold text-slate-400 uppercase mb-3">Identity Assets</h3>
-                    <div class="space-y-2 mb-6">
+                    <h3 class="text-[10px] font-black text-slate-300 uppercase tracking-widest mb-4">Core Assets</h3>
+                    <div class="space-y-2.5 mb-8">
     
-                        <div class="flex justify-between items-center text-sm font-mono">
-                            <span class="text-slate-500">SOUL.md</span>
-                            <span class="text-slate-800 font-bold">535</span>
+                        <div class="flex justify-between items-center text-[11px] font-bold mono">
+                            <span class="text-slate-400 tracking-tighter">SOUL.md</span>
+                            <span class="text-slate-900 bg-slate-100 px-2 py-0.5 rounded">535</span>
                         </div>
         
-                        <div class="flex justify-between items-center text-sm font-mono">
-                            <span class="text-slate-500">USER.md</span>
-                            <span class="text-slate-800 font-bold">382</span>
+                        <div class="flex justify-between items-center text-[11px] font-bold mono">
+                            <span class="text-slate-400 tracking-tighter">USER.md</span>
+                            <span class="text-slate-900 bg-slate-100 px-2 py-0.5 rounded">382</span>
                         </div>
         
-                        <div class="flex justify-between items-center text-sm font-mono">
-                            <span class="text-slate-500">MEMORY.md</span>
-                            <span class="text-slate-800 font-bold">360</span>
+                        <div class="flex justify-between items-center text-[11px] font-bold mono">
+                            <span class="text-slate-400 tracking-tighter">MEMORY.md</span>
+                            <span class="text-slate-900 bg-slate-100 px-2 py-0.5 rounded">360</span>
                         </div>
         
-                        <div class="flex justify-between items-center text-sm font-mono">
-                            <span class="text-slate-500">AGENTS.md</span>
-                            <span class="text-slate-800 font-bold">1,967</span>
+                        <div class="flex justify-between items-center text-[11px] font-bold mono">
+                            <span class="text-slate-400 tracking-tighter">AGENTS.md</span>
+                            <span class="text-slate-900 bg-slate-100 px-2 py-0.5 rounded">1,967</span>
                         </div>
         
-                        <div class="flex justify-between items-center text-sm font-mono">
-                            <span class="text-slate-500">TOOLS.md</span>
-                            <span class="text-slate-800 font-bold">118</span>
+                        <div class="flex justify-between items-center text-[11px] font-bold mono">
+                            <span class="text-slate-400 tracking-tighter">TOOLS.md</span>
+                            <span class="text-slate-900 bg-slate-100 px-2 py-0.5 rounded">118</span>
                         </div>
         
-                        <div class="flex justify-between items-center text-sm font-mono">
-                            <span class="text-slate-500">IDENTITY.md</span>
-                            <span class="text-slate-800 font-bold">36</span>
+                        <div class="flex justify-between items-center text-[11px] font-bold mono">
+                            <span class="text-slate-400 tracking-tighter">IDENTITY.md</span>
+                            <span class="text-slate-900 bg-slate-100 px-2 py-0.5 rounded">36</span>
                         </div>
         
                     </div>
-                    <h3 class="text-[10px] font-bold text-slate-400 uppercase mb-3">Research Files</h3>
+                    <h3 class="text-[10px] font-black text-slate-300 uppercase tracking-widest mb-4">Knowledge Base</h3>
                     <div class="space-y-2">
     
-                        <div class="flex justify-between items-center text-[11px] border-b border-slate-50 pb-1">
-                            <span class="text-slate-500 truncate pr-4">2026-03-14_dylan_patel__deep_dive_on_the_3_big_bottlenecks_to_scaling_ai_compute.md</span>
-                            <span class="text-orange-600 font-bold font-mono whitespace-nowrap">43,189</span>
+                        <div class="flex justify-between items-center text-[10px] border-b border-slate-50 pb-2">
+                            <span class="text-slate-400 truncate pr-6 font-medium">2026-03-14_dylan_patel__deep_dive_on_the_3_big_bottlenecks_to_scaling_ai_compute.md</span>
+                            <span class="text-orange-500 font-black mono whitespace-nowrap">43,189</span>
                         </div>
         
-                        <div class="flex justify-between items-center text-[11px] border-b border-slate-50 pb-1">
-                            <span class="text-slate-500 truncate pr-4">2026-03-07_how_cosplaying_ancient_rome_led_to_the_scientific_revolution.md</span>
-                            <span class="text-orange-600 font-bold font-mono whitespace-nowrap">37,319</span>
+                        <div class="flex justify-between items-center text-[10px] border-b border-slate-50 pb-2">
+                            <span class="text-slate-400 truncate pr-6 font-medium">2026-03-07_how_cosplaying_ancient_rome_led_to_the_scientific_revolution.md</span>
+                            <span class="text-orange-500 font-black mono whitespace-nowrap">37,319</span>
                         </div>
         
-                        <div class="flex justify-between items-center text-[11px] border-b border-slate-50 pb-1">
-                            <span class="text-slate-500 truncate pr-4">2026-03-20_world_models_computing_the_uncomputable.md</span>
-                            <span class="text-orange-600 font-bold font-mono whitespace-nowrap">32,857</span>
+                        <div class="flex justify-between items-center text-[10px] border-b border-slate-50 pb-2">
+                            <span class="text-slate-400 truncate pr-6 font-medium">2026-03-20_world_models_computing_the_uncomputable.md</span>
+                            <span class="text-orange-500 font-black mono whitespace-nowrap">32,857</span>
                         </div>
         
-                        <div class="flex justify-between items-center text-[11px] border-b border-slate-50 pb-1">
-                            <span class="text-slate-500 truncate pr-4">2026-02-26_vera_rubin__extreme_co-design_an_evolution_from_grace_blackwell_oberon.md</span>
-                            <span class="text-orange-600 font-bold font-mono whitespace-nowrap">23,249</span>
+                        <div class="flex justify-between items-center text-[10px] border-b border-slate-50 pb-2">
+                            <span class="text-slate-400 truncate pr-6 font-medium">2026-02-26_vera_rubin__extreme_co-design_an_evolution_from_grace_blackwell_oberon.md</span>
+                            <span class="text-orange-500 font-black mono whitespace-nowrap">23,249</span>
                         </div>
         
-                        <div class="flex justify-between items-center text-[11px] border-b border-slate-50 pb-1">
-                            <span class="text-slate-500 truncate pr-4">2026-03-25_electromagnetism_secretly_runs_the_world.md</span>
-                            <span class="text-orange-600 font-bold font-mono whitespace-nowrap">19,941</span>
+                        <div class="flex justify-between items-center text-[10px] border-b border-slate-50 pb-2">
+                            <span class="text-slate-400 truncate pr-6 font-medium">2026-03-25_electromagnetism_secretly_runs_the_world.md</span>
+                            <span class="text-orange-500 font-black mono whitespace-nowrap">19,941</span>
+                        </div>
+        
+                        <div class="flex justify-between items-center text-[10px] border-b border-slate-50 pb-2">
+                            <span class="text-slate-400 truncate pr-6 font-medium">2026-02-23_nathan_lambert_a16z_and_packy_mccormick_posted_new_notes.md</span>
+                            <span class="text-orange-500 font-black mono whitespace-nowrap">17,534</span>
+                        </div>
+        
+                        <div class="flex justify-between items-center text-[10px] border-b border-slate-50 pb-2">
+                            <span class="text-slate-400 truncate pr-6 font-medium">2026-03-04_are_ai_datacenters_increasing_electric_bills_for_american_households.md</span>
+                            <span class="text-orange-500 font-black mono whitespace-nowrap">9,929</span>
+                        </div>
+        
+                        <div class="flex justify-between items-center text-[10px] border-b border-slate-50 pb-2">
+                            <span class="text-slate-400 truncate pr-6 font-medium">2026-02-21_welcome_to_product_managers_at_work.md</span>
+                            <span class="text-orange-500 font-black mono whitespace-nowrap">9,701</span>
+                        </div>
+        
+                        <div class="flex justify-between items-center text-[10px] border-b border-slate-50 pb-2">
+                            <span class="text-slate-400 truncate pr-6 font-medium">2026-02-23_welcome_to_product_managers_at_work.md</span>
+                            <span class="text-orange-500 font-black mono whitespace-nowrap">9,701</span>
+                        </div>
+        
+                        <div class="flex justify-between items-center text-[10px] border-b border-slate-50 pb-2">
+                            <span class="text-slate-400 truncate pr-6 font-medium">2026-03-24_nvidia__the_inference_kingdom_expands.md</span>
+                            <span class="text-orange-500 font-black mono whitespace-nowrap">9,215</span>
                         </div>
         
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-xl font-bold mb-6 flex items-center">
-                    <span class="mr-2">⚡</span> Task Activity Log
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h2 class="text-lg font-black mb-8 uppercase tracking-tight flex items-center">
+                    <span class="w-2 h-6 bg-emerald-500 mr-3 rounded-full"></span> Task Activity
                 </h2>
-                <div class="overflow-hidden rounded-xl border border-slate-100">
+                <div class="overflow-hidden rounded-2xl border border-slate-50">
                 <table class="w-full text-left border-collapse">
-                    <thead class="bg-slate-50 text-slate-400 text-[10px] font-bold uppercase">
+                    <thead class="bg-slate-50 text-slate-400 text-[10px] font-bold uppercase tracking-widest">
                         <tr>
-                            <th class="p-4 w-40">Time (IST)</th>
-                            <th class="p-4 w-24">Agent</th>
-                            <th class="p-4">Context Preview</th>
-                            <th class="p-4 text-right w-24">Tokens</th>
+                            <th class="p-5 w-40">Time (IST)</th>
+                            <th class="p-5 w-28">Agent</th>
+                            <th class="p-5">Context Preview</th>
+                            <th class="p-5 text-right w-28">Tokens</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-50">
@@ -150,8 +184,8 @@
                 </div>
             </div>
             
-            <footer class="mt-12 mb-8 text-center text-slate-300 text-xs font-medium uppercase tracking-[0.2em]">
-                Data driven • Purpose built • Sakhi OS 🌸
+            <footer class="mt-16 mb-12 text-center">
+                <p class="text-slate-200 text-[10px] font-black uppercase tracking-[0.4em]">Sakhi OS • OpenClaw • 2026</p>
             </footer>
         </div>
     </body>
